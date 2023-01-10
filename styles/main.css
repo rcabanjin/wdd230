@@ -1,0 +1,68 @@
+/* HTML Selectors */
+body {
+    width: 600px;
+    font-weight: 1.3em;
+    display: block;
+    background-color: white;
+    font-family: 
+        "MonteserratBold", Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+}
+.shadowbox {color: white;
+    background-color: rgb(0, 76, 118);
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+    box-shadow: 
+        0 8px 16px rgba(0 0 0 / 20px)
+        0 12px 15px rgba(0 0 0 / 19%);
+    }
+header {
+    display: flex;
+} 
+img {
+    padding: 0px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 
+        0 8px 16px 0 rgb(0 0 0 / 20%), 
+        0 12px 15px 0 rgb(0 0 0 / 19%);
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;    
+}   
+
+h1{
+    padding: 15px;
+    margin: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+ul {
+    display: block;
+    font-size: 1em;
+}
+
+footer{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+#lastupdated {
+    color: aqua;
+    font-size: 1em;
+}

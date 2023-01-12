@@ -62,7 +62,7 @@ footer{
     justify-content: center;
     text-align: center;
 }
-bluebox-footer {
+#currentyear {
     color: rgb(0, 0, 0);
     font-size: 2em;
 }

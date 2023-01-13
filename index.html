@@ -1,50 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RonC Portal</title>
-    <meta name="description" content="Assignment portal for Ron Cabanjin in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <title>RonC Portal | WDD 230 Winter 2023</title>
+    <meta name="description" content="Assignment portal for Ron Cabanjin in WDD 230: Web Frontend Development at Brigham Young University - Idaho"">
+    <meta name="author" content="Ron Cabanjin">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="bluebox">
-        <img src="images/myphoto.jpg" alt="picture of Ron Ron Cabanjin">
-        <h1>Ron Cabanjin</h1>
+  <div class="page-wrap">
+    <header>
+    <div class="header-part">
+        <div class="image-placeholder">
+            <img class="profile-image" src="images/myphoto.jpg" alt="Ron Cabanjin">
+        </div>
+        <div class="my_name">
+            <h1>Ron Cabanjin</h1>
+        </div>
+    </div>
     </header>
-    <main>
-        <h2>WDD 230: Assignment Portal</h2>
-      <hr>    
-        <ul>
-            <li>Lesson 01:<a href="https://codepen.io/rcabanjin/pen/KKBaxQL"> Codepen Link</a></li>
-            <li>Lesson 02:<a href="#"> Title</a></li>
-            <li>Lesson 03:<a href="#"> Title</a></li>
-            <li>Lesson 04:<a href="#"> Title</a></li>
-            <li>Lesson 05:<a href="#"> Title</a></li>
-            <li>Lesson 06:<a href="#"> Title</a></li>
-            <li>Lesson 07:<a href="#"> Title</a></li>
-            <li>Lesson 08:<a href="#"> Title</a></li>
-            <li>Lesson 09:<a href="#"> Title</a></li>
-            <li>Lesson 10:<a href="#"> Title</a></li>
-            <li>Lesson 11:<a href="#"> Title</a></li>
-        </ul>
-        <hr>
-    </main>
-    <footer class="bluebox">
-      <div>
-            <p>
-              &copy; <span id="currentyear"></span> | Ron Ron Cabanjin | Vancouver, Canada
-            </p>
-            <p>
-              <span id="lastupdated"></span>
-            </p>
-      </div>
-    </footer>
-  <script src="scripts/scripting.js"></script>
+        <main>
+        <div class="content">
+            <h1>WDD 230: Assignment Portal</h1>
+            <ul class="lessons">
+                <li>Lesson 01: <a href="https://codepen.io/rcabanjin/pen/KKBaxQL" target="_blank">Codepen Link</a></li>
+                <li>Lesson 02: <a href="#">Title</a></li>
+                <li>Lesson 03: <a href="#">Title</a></li>
+                <li>Lesson 04: <a href="#">Title</a></li>
+                <li>Lesson 05: <a href="#">Title</a></li>
+                <li>Lesson 06: <a href="#">Title</a></li>
+                <li>Lesson 07: <a href="#">Title</a></li>
+                <li>Lesson 08: <a href="#">Title</a></li>
+                <li>Lesson 09: <a href="#">Title</a></li>
+                <li>Lesson 10: <a href="#">Title</a></li>
+                <li>Lesson 11: <a href="#">Title</a></li>
+            </ul>
+            <p>Some lessons may need more than one activity/assignment link.</p>
+        </div>
+        </main>
+        <footer>
+                    <div>
+                      <p>
+                        &copy; <span id="currentyear"></span> | Ron Ron Cabanjin | Vancouver, Canada
+                      </p>
+                      <p>
+                        <span id="lastupdated"></span>
+                      </p>
+
+        </footer>
+    </div>
+    <script src="scripts/scripting.js"></script>
 </body>
 </html>

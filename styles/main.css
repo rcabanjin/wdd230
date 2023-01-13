@@ -1,66 +1,79 @@
-/* HTML Selectors */
-body {
-    width: 600px;
-    display: block;
-    background-color: white;
-    font-family: 
-        "MonteserratBold", Arial, Helvetica, sans-serif;
-    margin: 10px auto;
-}
-.bluebox {color: rgb(0, 0, 0);
-    background-color: rgb(48, 147, 201);
-    padding: 15px;
-    border-radius: 5px;
+.page-wrap {
+    max-width: 500px;
     margin: auto;
-    align-items: center;
- 
-    }
-header {
-    display: flex;
-} 
-img {
-    padding: 0px;
-    width: 100px;
-    border-radius: 5px;
-    box-shadow: 
-        0 8px 16px 0 rgb(0 0 0 / 20%), 
-        0 12px 15px 0 rgb(0 0 0 / 19%);
-    border-style: none;
-    
-}   
+    background: white;
+  }
 
-h1{
-    padding: 15px;
-    margin: 1em;
-    font-size: 2em;
+body {
+  font-family: "MonteserratBold", Arial, Helvetica, sans-serif;
+}
+
+
+.header-part{
+    background-color: rgb(48, 147, 201);
+    padding: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 20px 30px 20px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+  .profile-image {
+    width: 70%;
+    box-shadow: 0px 0px 10px #000000;
+  }
+
+  .my_name h1 {
+    font-size: 30px;
     font-weight: bold;
-}
-
-h2 {
-    display: block;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
-ul {
-    display: block;
-    font-size: 1em;
-}
-
-footer{
-    display: block;
-    justify-content: center;
-    text-align: center;
-}
-
-
-#lastupdated {
     color: rgb(0, 0, 0);
-    font-size: 1em;
-}
+    margin-right: 25px;
+    margin-top: 60px;
+  }
+
+  .content h1 {
+    font-size: 25px;
+
+    margin-left: 20px;
+  }
+
+  .week_lessons {
+    max-width: 80%;
+    margin-left: 20px;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    padding-bottom:10px ;
+    margin-bottom: 1px;
+  }
+
+  .week_lessons li {
+    padding: 5px;
+  }
+
+  .content p {
+    font-size: 12px;
+    padding-left: 18px;
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+
+footer {
+    background-color: rgb(48, 147, 201);
+    box-shadow: 0px 0px 10px #000000;
+    padding: 20px 30px 20px;
+}  
+
+footer {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: "MonteserratBold", Arial, Helvetica, sans-serif;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: #212121;
+  }

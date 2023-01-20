@@ -1,0 +1,12 @@
+@media screen and (max-width: 375px) { 
+    .my_name h1 {
+        font-size: 120%;
+
+      }
+      .content h1 {
+        font-size: 30px;
+      }
+      .content p {
+        font-size: 16px;
+      }
+}

@@ -1,0 +1,16 @@
+@media screen and (min-width: 32.5em) {
+
+.my_name h1 {
+    font-size: 30px;
+
+  }
+
+.content h1 {
+    font-size: 25px;
+  }
+
+.content p {
+    font-size: 12px;
+
+  } 
+}  

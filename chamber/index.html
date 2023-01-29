@@ -4,39 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Principles Documents</title>
+    <title>Chamber - Week 03</title>
     <meta name="description" content="Design Principles Document - Ron Cabanjin">
     <meta name="author" content="Ron Cabanjin">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
     <header>
-            <img class="logo" src="images/logo.jpg" alt="BCIMA-logo" height="150">
-
-        <h1>British Columbia Industrial Marketing Association</h1>
+        <div class="site-header"> 
+                <div id="logo">
+                    <img src="images/logo.jpg" alt="BCIMA-logo" height="150"></div>        
+                <div id="social-icon">
+                    <img src="images/facebook_logo.png" alt="Facebook Logo">
+                    <img src="images/linkedin_logo.png" alt="Twitter Logo">
+                </div>
+                <nav>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>CLOSE</span></button>  
+                    <ul id="primary-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+        </div>
     </header>
-    <nav>
-<button>&#9776;</button>
-        <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <!--<div><a href="project/">Term Project</a></div>
-        <div><a href="about/">🎵 About</a></div> -->
-    </nav>
     <main>
         
         <article>
-            <h2>About us</h2>
-            <p></p>
+
+            <h2></h2>
+            <div class="grid-container">
+                <div class="hero-grid">Hero with site name and call to action</div>
+                <div class="event-grid">Event</div>
+                <div class="weather-grid">Weather</div>
+                <div class="news-grid">News Release</div>
+                <div class="spotplace-grid">   
+                    <div class="spot1-grid">Spotlight 1</div>
+                    <div class="spot2-grid">Spotlight 2</div>
+                    <div class="spot3-grid">Spotlight 3</div>
+                </div> 
+                <div class="join-grid">Join</div>
+            </div>    
     </main>
-                    <footer>
-                        <div>
+                    <footer class="footer-holder">
+                        <img class = "footer-img" src="images/logo.jpg" alt="BCIMA-logo" height="150">
+                        <div class="footer-text">
                           <p>
                             &copy; <span id="currentyear"></span> | Ron Ron Cabanjin | Vancouver, Canada
                           </p>

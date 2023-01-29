@@ -12,15 +12,27 @@ li.views-row, .view ul {
 	list-style-type: none;
 }
 
-header,
-footer {
-	background-color: #355690;
+.site-header .logo a img {
 	display: flex;
+	width: 100%;
+	height: auto;
 	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-  color: #eee;
+}
+
+
+footer {
+	background-color: white;
+  	color: #0B111D;
+}
+.footer-img {
+	height: 30%;
+}
+
+
+.footer-holder {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 10px;
 }
 
 header,
@@ -44,61 +56,7 @@ p {
 	padding: .5rem;
 }
 
-nav {
-	background-color: #3F67AD;
-	text-align: center;
-}
 
-nav {
-	display: flex;
-	flex-direction: column;
-}
-
-nav div {
-	flex: 1 1 auto;
-}
-
-nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 15px;
-	text-decoration: none;
-	font-size: 0.9rem;
-}
-
-nav a:hover {
-	background-color: #708080;
-	color: yellow;
-}
-
-main {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	justify-content: center;
-	font-size: 0.85rem;
-}
-
-main .submenu {
-	margin: 1rem;
-	border: 1px solid #bbb;
-	padding: 1rem;
-	background-color: #eee;
-}
-
-.submenu ul {
-	margin-left: 2rem;
-}
-
-main picture {
-	display: none;
-	margin: 1rem;
-}
-
-main article {
-	margin: 1rem;
-}
 
 footer {
 	display: flex;
@@ -107,28 +65,34 @@ footer {
 	font-weight: 700;
 }
 
+.grid-container {
+	grid-gap: 1px;
+}
+
+.hero-grid, .event-grid, .weather-grid, .news-grid, .join-grid {
+	background-color: #c6d4ed;
+	padding: 20px;
+	border: 1px solid #848484;
+	margin: 10px;
+}
+
+.spot1-grid, .spot2-grid, .spot3-grid {
+	background-color: #c6d4ed;
+	padding: 20px;
+	border: 1px solid #848484;
+}
+
+.spotplace-grid {
+	display: grid;	
+	grid-template-columns: 1fr 1fr; 
+	background-color: #babcbc;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+
+
 /***********************************************/
 /** Media Queries for larger views *************/
 /***********************************************/
-
-@media (min-width: 37.5em) {
-	nav {
-		flex-direction: row;
-	}
-	
-	nav a {
-		font-size: 1.1rem;
-	}
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	main picture {
-		display: block;
-	}
-}
-
-@media (min-width: 48em) {
-	nav a {
-		font-size: 1.3rem;
-	}
-}

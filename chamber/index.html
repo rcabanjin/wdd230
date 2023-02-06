@@ -5,63 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber - Week 03</title>
-    <meta name="description" content="Design Principles Document - Ron Cabanjin">
-    <meta name="author" content="Ron Cabanjin">
-    <link rel="stylesheet" href="styles/small.css">
+    <meta name="description" content="The home site for the Chamber of Commerce for the city of Lomas de Zamora in Buenos Aires.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="banner-head">British Columbia Industrial Marketing</div>
     <header>
-        <div class="site-header"> 
-                <div id="logo">
-                    <img src="images/logo.jpg" alt="BCIMA-logo" height="150"></div>        
-                <div id="social-icon">
-                    <img src="images/facebook_logo.png" alt="Facebook Logo">
-                    <img src="images/linkedin_logo.png" alt="Twitter Logo">
-                </div>
-                <nav>
-                    <button id="hamburgerBtn"><span>&#9776;</span><span>CLOSE</span></button>  
-                    <ul id="primary-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Members</a></li>
-                        <li><a href="#">Location</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
+        <div class="primary-header">
+            <img class="logo" src="images/logo.png" alt="Marketing Conference">
+            <button id="hamburger-button"><span>&equiv;</span><span>X</span></button>
+            <nav>
+                <ul id="primary-nav">
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="" target="_blank"><img class="facebook-icon" src="images/facebook_logo.png" alt="Facebook icon"></a>
+                <a href="" target="_blank"><img class="linkedin-icon" src="images/linkedin_logo.png" alt="LinkedIn icon"></a>
+            </div>
+            
         </div>
     </header>
+    <div class="date-now">Today is : <div id="currentDate"></div>
+    </div>
     <main>
-        
-
-            <div class="grid-container">
-                <div class="hero-grid">Hero with site name and call to action</div>
-                <div class="event-grid">Event</div>
-                <div class="weather-grid">Weather</div>
-                <div class="news-grid">News Release</div>
-                <div class="spotplace-grid">   
-                    <div class="spot1-grid">Spotlight 1</div>
-                    <div class="spot2-grid">Spotlight 2</div>
-                    <div class="spot3-grid">Spotlight 3</div>
-                </div> 
-                <div class="join-grid">Join</div>
-            </div> 
-
+       
+        <div class="main">
+            <div class="event">
+                <h2>Event</h2>
+                <img src="images/event.png" alt="Event logo">
+                <h3>Marketing Talk</h3>
+                <p>2023 Annual Marketing Conference</p>
+                <p>Date: March 30, 2022.</p>
+                <a href="#">Attend now</a>
+            </div>
+            <div class="hero-text">
+                <h1>Connect with like-minded marketers</h1>
+                <p>through our events and programming</p>
+                <div class="hero-button">Learn More</div>
+            </div>
+            <div class="spotlight">
+                <div class="spotlight-1">
+                    <h2>Sponsorship</h2>
+                    <img src="images/sponsor.png" alt="Trophy">
+                    <p>There are a variety of sponsorship opportunities, ranging from full-year partnerships to seasonal or event-specific engagements</p>
+                    <div class="click-button">Learn more</div>
+                </div>
+                <div class="spotlight-2">
+                    <h2>Volunteer</h2>
+                    <img src="images/volunteer.png" alt="helping_hands_logo">
+                    <p>Gain access to unparalleled networking opportunities, professional development, and exciting events</p>
+                    <div class="click-button">Join now</div>
+                </div>
+                <div class="spotlight-3">
+                    <h2>Blogs</h2>
+                    <img src="images/blog.png" alt="Blog Icon">
+                    <p>In recent years, what many brands, media, and marketing professionals have realized is this: Consumers are looking for and expecting diverse, socially responsible, and inclusive marketing.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="weather">
+                <h2>Vancouver Weather</h2>
+                <div class="weather-info">
+                    <img src="images/cloud.png" alt="cloudy-image">
+                    <p id="temp">09°C</p>
+                    <p id="weather-condition">Condition: Chance of showers</p>
+                    <div class="more-weather-info">
+                        <p>Wind Speed: <span id="wind-speed">13 km/h</span></p>
+                        <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="join-us">
+                <h2>Expand your network</h2>
+                <img src="images/join.png" alt="Join Icon">
+                <p>Expand your network and marketing knowledge with BC top industrial marketing professionals.</p>
+                <div class="join-button">Join Us</div>
+            </div>
+            <div class="news">
+                <h2>News Release</h2>
+                <h3>Principles of Authentic Marketing</h3>
+                <p>In recent years, what many brands, media, and marketing professionals have realized is this: Consumers are looking for and expecting diverse, socially responsible, and inclusive marketing.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
     </main>
-               
-            <footer class="footer-holder">
-                <img class = "footer-img" src="images/logo.jpg" alt="BCIMA-logo" height="150">
-                    <div class="footer-text">
-                        <p>
-                        &copy; <span id="currentyear"></span> | Ron Ron Cabanjin | Vancouver, Canada
-                        </p>
-                        <p>
-                        <span id="lastupdated"></span>
-                        </p>
-                        </div>
-            </footer>
-        <script src="scripts/scripting.js"></script>
-    </body>
-    </html>
+    <footer>
+        <div class="info">
+            <div class="part-1">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="BC-industrial-makreting-logo">
+                </div>
+                <div>
+                    <p>Ron Ron Cabanjin | Vancouver, Canada</p>
+                </div>
+            </div>
+            <div class="part-2">
+                <div>
+                    <p>www.bcima.ca | 778-539-0000</p>
+                    <p><a href="https://goo.gl/maps/H3knsxASYXaCLMzX6" target="_blank">Location Map</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> | Ron Ron Cabanjin | WDD 230 Project | Last updated: <span id="lastupdated"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"> </script>
+</body>
+</html>

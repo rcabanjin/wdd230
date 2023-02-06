@@ -1,93 +1,68 @@
 @media only screen and (min-width: 64rem) {
 
-    nav button {display: none;}
+  nav ul li a {
+      font-size: 1.4rem;
+  }
 
-    #site-header {
-    display: flex;
-    }
+  .main {
+      grid-template-columns: repeat(5, 1fr);
+  }
 
+  .event {
+      grid-row: 1/2;
+  }
+  
+  .hero-text {
+      grid-column: 2/5;
+      grid-row: 1/3;
+      height: auto;
+  }
 
-  #primary-nav {
-    display: flex;
-    margin-top: -60px;
-    margin-left: 300px;
-    justify-content: start;
-    color: black;
+  .hero-text h1 {
+      font-size: 3rem;
+  }
+
+  .hero-button{
+    margin-top: 30px;
+    width: 250px;
+    font-size: 20px;
 }
-    nav button {
-        justify-content: center;
-        align-self: center;
-}
-    #social-icon {
-        grid-column: 3/3
-    }
+  
+  .spotlight {
+      grid-column: 5/6;
+      grid-row: 1/4;
+  }
 
-     nav ul li a {
-        border: 0;
-    }
+  .spotlight-1 {
+      grid-column: 1/3;
+  }
 
-    .event-grid, .weather-grid, .news-grid, .spot1-grid, .spot2-grid, .spot3-grid, .join-grid {
-        height: 200px;
-      }  
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-auto-rows: 200px;
-        grid-gap: 5px;
-        margin: 10px;
-      }
-    
-      .hero-grid {
-        grid-column: 2 / 4;
-        grid-row: 1 / 2;
-        height: 400px;
-   
-      }
-    
-      .news-grid {
-        grid-column: 2 / 4;
-        grid-row: 3 / 4;
-      }
-    
-      .spotplace-grid {
-        grid-column: 4 / 5;
-        grid-row: 1 / 4;
-        background-color: beige;
-        height: 100%;
-        padding: 10px;
-      }
-    
-      .join-grid {
-        grid-column: 1 / 2;
-        grid-row: 3;
-        display: block;
-      }
-    
-      .event-grid {
-        grid-column: 1 / 2;
-        grid-row: 1;
-      }
-    
-      .weather-grid {
-        grid-column: 1 / 2;
-        grid-row: 2;
-      }
-      .spot1-grid {
-        grid-column: 1 / -1;
-        grid-row: 1;
-        height: 100%;
-      }
+  .spotlight-2 {
+      grid-column: 1/3;
+  }
 
-      .spot2-grid {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        height: 100%;
+  .spotlight-2,
+  .spotlight-3 {
+      border-top: 1px solid grey;
+  }
 
-      }
-      .spot3-grid {
-        grid-column: 1 / -1;
-        grid-row: 3;
-        height: 100%;
-        display: block;
-      }
+  .spotlight-3 {
+      display: block;
+  }
+  
+  .weather {
+      grid-column: 1/2;
+      grid-row: 2/3;
+  }
+  
+  .join-us {
+      grid-column: 1/2;
+      grid-row: 3/4;
+  }
+  
+  .news {
+      grid-column: 2/5;
+      grid-row: 3/4;
+  }
+
 }

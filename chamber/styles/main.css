@@ -175,31 +175,40 @@ nav ul li.active a {
     padding: 0.6rem;
     border-radius: 5px;
 }
+
+figure.hero-image img{
+    margin: 0;
+}
+
 .hero-text {
     grid-column: 1/2;
     grid-row: 1/2;
-    background-image: url("../images/hero3\ copy.png");
-    background-position: center;
-    background-size: cover;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 300px;   
 }
 
+
 .hero-text h1 {
-    color: white;
-    font-size: 2.2rem;
+    position: absolute;
     text-align: center;
+    margin-top: -50px;
+    color: #042a6c;
+    font-size: 2rem;
+    inline-size: 400px;
+    overflow-wrap: break-all;
 }
 .hero-text p {
-    color: white;
-    font-size: 1.2rem;
+    position: absolute;
+    color: #042a6c;
+    font-size: 1rem;
     text-align: center;
+    margin-top: 50px;
 }
 
 .hero-button{
+    position: absolute;
     cursor: pointer;
     color: white;
     padding: 0.6rem;
@@ -208,6 +217,7 @@ nav ul li.active a {
     width: 200px;
     text-align: center;
     font-size: 16px;
+    margin-bottom: -120px;
 }
 
 

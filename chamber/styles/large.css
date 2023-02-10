@@ -19,11 +19,19 @@
   }
 
   .hero-text h1 {
-      font-size: 3rem;
+    font-size: 3rem;
+    inline-size: 500px;
+    overflow-wrap: break-all;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    overflow-wrap: break-all;
+    margin-top: 100px;
   }
 
   .hero-button{
-    margin-top: 30px;
+    margin-top: 150px;
     width: 250px;
     font-size: 20px;
 }

@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="scripts/windchill.js"></script>
 </head>
 <body>
     <div class="banner-head">British Columbia Industrial Marketing</div>
@@ -50,8 +51,16 @@
                 <a href="#">Attend now</a>
             </div>
             <div class="hero-text">
-                <h1>Connect with like-minded marketers</h1>
-                <p>through our events and programming</p>
+                <figure class="hero-image">
+                    <img src="images/wdd230-org.jpg" alt="golgothal" sizes="50vw"
+                            srcset="images/wdd230-org-small-200.jpg 200w,
+                                    images/wdd230-org-medium-500.jpg 500w,
+                                    images/wdd230-org-large-800.jpg 800w">
+                </figure>   
+
+                    <h1>Connect with like-minded marketers</h1>
+                    <p>through our events and programming</p>
+                
                 <div class="hero-button">Learn More</div>
             </div>
             <div class="spotlight">
@@ -82,8 +91,9 @@
                     <p id="weather-condition">Condition: Chance of showers</p>
                     <div class="more-weather-info">
                         <p>Wind Speed: <span id="wind-speed">13 km/h</span></p>
-                        <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                        <p>The wind chill is <div id="result"></div>
                     </div>
+                    
                 </div>
             </div>
             <div class="join-us">

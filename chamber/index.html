@@ -15,6 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
     <script src="scripts/windchill.js"></script>
+    <script>
+        function windChill(tempF, speed) {
+          if (tempF <= 50 && speed >= 3) {
+            var windChillFactor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempF * Math.pow(speed, 0.16);
+            return windChillFactor;
+          }
+          else {
+            return "N/A";
+          }
+        }
+      </script>
 </head>
 <body>
     <div class="banner-head">British Columbia Industrial Marketing</div>
@@ -91,9 +102,11 @@
                     <p id="weather-condition">Condition: Chance of showers</p>
                     <div class="more-weather-info">
                         <p>Wind Speed: <span id="wind-speed">13 km/h</span></p>
-                        <p>The wind chill is <div id="result"></div>
-                    </div>
-                    
+                        <p>The wind chill is <div id="output"></div>
+                    </div>  
+                    <script>
+                    document.getElementById("output").innerHTML = windChill(40, 5);
+                    </script>
                 </div>
             </div>
             <div class="join-us">

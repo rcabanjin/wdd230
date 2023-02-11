@@ -136,11 +136,10 @@ nav ul li.active a {
     margin: 20px;
 }
 
-.event, .hero-text, .spotlight, .news, .weather, .join-us{
+.hero-text, .event, .spotlight, .news, .weather, .join-us{
     flex-direction: column;
     background-color: #c6d4ed;
     padding: 0 10px 10px 10px;
-    display: flex;
     justify-content: center;
 }
 
@@ -164,7 +163,7 @@ nav ul li.active a {
 }
 
 .join-button{
-    width: 300px;
+    width: 200px;
     align-self: center;
 }
 
@@ -176,48 +175,45 @@ nav ul li.active a {
     border-radius: 5px;
 }
 
-figure.hero-image img{
-    margin: 0;
-}
 
 .hero-text {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 300px;   
 }
 
+.hero-text img  {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 
 .hero-text h1 {
     position: absolute;
     text-align: center;
-    margin-top: -50px;
+    top: 40px;
     color: #042a6c;
     font-size: 2rem;
-    inline-size: 400px;
     overflow-wrap: break-all;
 }
-.hero-text p {
-    position: absolute;
-    color: #042a6c;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 50px;
-}
+
 
 .hero-button{
     position: absolute;
+    text-align: center;
     cursor: pointer;
     color: white;
     padding: 0.6rem;
     background-color: #5489E7;
     border-radius: 5px;
     width: 200px;
-    text-align: center;
     font-size: 16px;
-    margin-bottom: -120px;
+    top: 240px;
+    left: 140px;
+    
 }
 
 

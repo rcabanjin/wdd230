@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <link rel="stylesheet" href="lazyload.css">
+</head> 
+<body>
+    <main>
+        <h1>Progressive Loading (Images)</h1>
+        <dev class="image-holder"> 
+        <picture>
+            <img data-src="images/placeholder.png" src="images/progressiveimg1.png"  alt="hiking-1" />
+        </picture>
+        <picture>
+            <img data-src="images/placeholder.png" src="images/progressiveimg2.png" alt="hiking-2" />
+        </picture>
+        <picture>
+            <img  data-src="images/placeholder.png" src="images/progressiveimg3.png"  alt="hiking-3" loading="lazy"  />
+        </picture>
+        <picture>
+            <img data-src="images/placeholder.png" src= "images/progressiveimg4.png"  alt="hiking-4" loading="lazy"/>
+        </picture>
+        <picture>
+            <img data-src ="images/placeholder.png" src="images/progressiveimg5.png" alt="hiking-5" loading="lazy"   />
+        </picture>
+        </dev>
+    </main>
+    <script src="lazyload.js"></script>
+</body>    
+   
+</html>

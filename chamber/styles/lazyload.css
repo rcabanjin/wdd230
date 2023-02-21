@@ -1,0 +1,20 @@
+
+.image-holder {
+    display: grid;
+    grid-column: 1/1;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+img {
+
+    border: 1px solid black;
+    margin: 10px;
+}

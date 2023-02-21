@@ -101,13 +101,13 @@ nav ul li.active a {
     color: white;
     font-weight: bold;
 }
-
+/*
 #hamburger-button span:nth-child(1) {display: block;}
 #hamburger-button span:nth-child(2) {display: none;}
 
 #hamburger-button.open span:nth-child(1) {display: none;}
 #hamburger-button.open span:nth-child(2) {display: block;}
-
+*/
 .social-icons {
     cursor: pointer;
     grid-column: 2/3;
@@ -378,4 +378,54 @@ footer {
     text-align: center;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+
+   /*  Discover Page CSS */
+
+   .discover-banner img  {
+        width: 500px;
+        display: block;
+        align-items: center;
+   }
+
+   .vancouver-activities h3 {
+    margin-top: 50px;
+   }
+
+   .vancouver-activities img {
+    width: 500px;
+    display: block;
+    align-items: center;
+   }
+
+   figcaption {
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 3px;
+   }
+
+
+/* ================================================================= */
+
+.discover-main {
+    display: grid;
+    padding: 10px;
+}
+
+.discover-main img {
+    object-fit:cover;
+}
+
+
+img {
+    transition: filter 0.5s;
+    filter: blur(0em);
+}
+
+
+.discover-main img {
+
+    border: 1px solid black;
+    margin: 10px;
 }

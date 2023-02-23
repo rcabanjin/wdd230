@@ -3,12 +3,12 @@ body {
   }
   
   table {
-	margin: 50px auto;
+	margin: 0px auto;
 	border: thin solid;
 	border-collapse: collapse;
   }
 
-  .whole-table th[colspan="5"] {
+  .whole-table th[colspan="4"] {
 	padding: 25px;
   }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chamber - Week 03</title>
+        <meta name="description" content="Vancouver Industrial Marketing">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="banner-head">British Columbia Industrial Marketing</div>
+        <header>
+            <div class="primary-header">
+                <img class="logo" src="images/logo.webp" alt="Marketing Conference">
+                <button id="hamburger-button"><span>&equiv;</span><span>X</span></button>
+                <nav>
+                    <ul id="primary-nav">
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <a href="" target="_blank"><img class="facebook-icon" src="images/facebook_logo.png" alt="Facebook icon"></a>
+                    <a href="" target="_blank"><img class="linkedin-icon" src="images/linkedin_logo.png" alt="LinkedIn icon"></a>
+                </div>          
+            </div>
+        </header>
+</head> 
+<body>
+
+          <div class="join-main">
+            <h1>BCIMA Membership</h1>
+            <p>No matter your level of marketing experience, the BCIMA offers the tools, training, 
+                research and community to help you advance your career.</p>
+            <h2>Who Should Join the AMA?</h2>    
+             <ul>
+                <li>Marketing and sales professionals of all levels looking to boost their skills and expand their networks</li>
+                <li>Small business owners, freelancers or career switchers looking to learn more about marketing</li>
+                <li>Scholars, academics and doctoral students looking to publish in a journal or collaborate on research</li>
+                <li>Students looking for more connection in the Marketing Industry</li>
+             </ul>
+
+            <form method="get" action="thankyou.html">
+            <div class="name">
+                <div class="form-box">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required placeholder="First Name">
+            </div>
+            <div class="form-box">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required placeholder="Last Name">
+            </div></div>
+            <div class="form-box">
+                <label for="business_position">Job Title:</label>
+                <input type="text" id="business_position" name="business_position" pattern="[A-Za-z\s\-]{7,}" placeholder="Business Position Title">
+            </div>
+            <div class="contact">
+            <div class="form-box">
+                <label for="email">Email Add:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-box">
+                <label for="cell_phone">Contact Number:</label>
+                <input type="tel" id="cell_phone" name="cell_phone" required placeholder="Cell Phone">
+            </div></div>
+            <div class="form-box">
+                <label for="business_name">Organization:</label>
+                <input type="text" id="business_name" name="business_name" required placeholder="Business Name/Title">
+            </div>
+            <div class="form-box">
+                <label for="membership_level">Membership Level:</label>
+                <select id="membership_level" name="membership_level">
+                    <option value="Professional-Membership">Professional Membership $149/Year</option>
+                    <option value="Academic-Membership">Academic Membership $149/Year</option>
+                    <option value="Group-Membership">Group Membership Membership $199/Year</option>
+                    <option value="Student-Membership">Student Membership $30/year</option>
+                </select>
+            </div>
+                <p>Membership level benefits:</p>
+                <ul>
+                    <li>Student Members can join one of our 320+ Collegiate Chapters around the world</li>
+                    <li>Professional Members can be a part of one of our 70+ Professional Chapters across North America</li>
+                    <li>Academic Members get unlimited access to Special Interest Groups (SIGs)</li>
+                    <li>Gold Membership: Trainings, advertising, event discounts</li>
+                </ul>
+                <label for="business_description">Self Introduction:</label>
+                <textarea id="business_description" name="business_description" placeholder="Business Description"></textarea>
+                
+                <input type="hidden" name="form_loaded_at" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+
+    
+    <footer>
+        <div class="info">
+            <div class="part-1">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="BC-industrial-makreting-logo">
+                </div>
+                <div>
+                    <p>Ron Ron Cabanjin | Vancouver, Canada</p>
+                </div>
+            </div>
+            <div class="part-2">
+                <div>
+                    <p>www.bcima.ca | 778-539-0000</p>
+                    <p><a href="https://goo.gl/maps/H3knsxASYXaCLMzX6" target="_blank">Location Map</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> | Ron Ron Cabanjin | WDD 230 Project | Last updated: <span id="lastupdated"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>    
+   
+</html>

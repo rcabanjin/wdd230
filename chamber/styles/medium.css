@@ -93,4 +93,8 @@
   .spotlight-2 img {
     width: 33%;
   }
+
+  .discover-main img:hover {
+    opacity: .5;
+}
 }

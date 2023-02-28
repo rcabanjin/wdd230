@@ -99,5 +99,8 @@
     padding-right: 10px;
 }
 
+.discover-main img:hover {
+    opacity: .5;
+}
 
 }

@@ -197,7 +197,7 @@ nav ul li.active a {
     top: 40px;
     color: #042a6c;
     font-size: 2rem;
-    overflow-wrap: break-all;
+    overflow-wrap:break-word;
 }
 
 

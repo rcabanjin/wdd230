@@ -430,6 +430,10 @@ img {
     margin: 10px;
 }
 
+
+.discover-main img:hover {
+    opacity: .5;
+}
 /* ===================JOIN US======================================= */
 
 

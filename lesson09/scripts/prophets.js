@@ -29,11 +29,11 @@ const displayProphets = (prophets) => {
 
         //Build the h2 content out to show the prophet's full name - finish the template string
         h2.textContent = `${prophet.name} ${prophet.lastname}`;
-        h3.innerHTML = `Birth: ${prophet.birthdate}<br>Birth: ${prophet.birthplace}<br>Children: ${prophet.numofchildren}<br>Age: ${prophetAge(prophet.birthdate, prophet.death)}<br>Years served: ${prophet.length}`;
+        h3.innerHTML = `Birth: ${prophet.birthdate}<br>Birth: ${prophet.birthplace}<br>Children: ${prophet.numofchildren}<br>Age: ${prophetAge(prophet.birthdate, prophet.death)} Years Old <br>Years of service: ${prophet.length}`;
 
         //Build the image portrait by setting all the relevant attributes
         portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${prophet.order === 1 ? "st" : prophet.order === 2 ? "nd" : "th"} Latter-day President`);
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} $`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');

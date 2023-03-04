@@ -545,8 +545,8 @@ textarea {
 .list-view {
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0px 0px 10px black;
-	padding: 0;
+	border: 1px solid gray;
+	padding: 20px;
 	margin: 20px;
 }
 
@@ -555,7 +555,6 @@ textarea {
 	grid-template-columns: 1.5fr 1fr 1fr 1fr;
 	margin: 0;
 	padding: 0 5px;
-	background-color: var(--darkyellow);
 	box-shadow: none;
 	text-align: left;
 	border: none;
@@ -566,18 +565,18 @@ textarea {
 }
 
 .list-view h2 {
-	font-size: 1rem;
+	font-size: 18px;
 	width: 100%;
 	padding: 0 5px;
 }
 
 .list-view p{
-	font-size: .8rem;
+	font-size: 15px;
 	padding: 0 5px;
 }
 
 .list-view a {
-	font-size: .8rem;
+	font-size: 15px;
     margin-top: 10px;
 }
 

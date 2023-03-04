@@ -1,61 +1,55 @@
-// define source and view-switch boolean
 const source = 'json/directory.json';
 let listDisplay = false;
 
-// pull json data
-async function getBusinessData() {
+async function businessinfo() {
     const response = await fetch(source);
     const data = await response.json();
     displayGrid(data.businesses);
 }
+businessinfo();
 
-// run function
-getBusinessData();
-
-// define grid display
 const displayGrid = (businesses) => {
-    const cards = document.querySelector('div.businesses'); // select the output container element
+    const cards = document.querySelector('div.businesses'); 
+
 
     businesses.forEach((business) => {
-        // Create elements to add to the div.cards element
-        let card = document.createElement("section");
-        let logo = document.createElement("img");
-        let name = document.createElement("h2");
-        let address = document.createElement("p");
-        let phone = document.createElement("p");
-        let website = document.createElement("p");
-        let membership = document.createElement("p");
-    
-        // Build the image logo by setting all the relevant attribute
-        logo.setAttribute("src", business.image);
-        logo.setAttribute("alt", `${name} logo`);
-        logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "180");
-        logo.setAttribute("height", "180");
-        logo.classList.add("not-list");
+        const card = document.createElement("section");
+        const d_image = document.createElement("img");
+        const name = document.createElement("h2");
+        const address = document.createElement("p");
+        const phone = document.createElement("p");
+        const websiteLink = document.createElement("a");
+        const information = document.createElement("p");
 
-        // Build the other content out to show the business information
+        d_image.setAttribute("src", business.image);
+        d_image.setAttribute("alt", `${name} d_image`);
+        d_image.setAttribute("loading", "lazy");
+        d_image.setAttribute("width", "200");
+        d_image.setAttribute("height", "200");
+        d_image.classList.add("not-list");
+
         name.textContent = `${business.name}`;
         address.textContent = `${business.address}`;
         phone.textContent = `${business.phone}`;
-        website.textContent = `${business.website}`;
-        website.classList.add("not-list");
-        membership.textContent = `${business.membership} Membership`;
-        membership.classList.add("not-list");
-    
-        // Append the section(card) with the created elements
-        card.appendChild(logo);
+        
+        websiteLink.href = business.website;
+        websiteLink.target = "_blank";
+        websiteLink.textContent = "Link to website";
+   
+        information.textContent = `${business.information} Information`;
+        information.classList.add("not-list");
+
+        card.appendChild(d_image);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(website);
-        card.appendChild(membership);
+        card.appendChild(websiteLink);
+        card.appendChild(information);
     
         cards.appendChild(card);
-    }) // end of forEach loop
-} // end of function expression
+    }) 
+} 
 
-// add event listeners
 const gridButton = document.querySelector("#grid-button");
 const listButton = document.querySelector("#list-button");
 const display = document.querySelector(".businesses");

@@ -1,8 +1,9 @@
 @media only screen and (min-width: 45rem) {
 
-  button {
-      display: none;
-  }
+    nav button {
+        display: none;
+    }
+
 
   .primary-header {
       display: flex;
@@ -97,4 +98,9 @@
   .discover-main img:hover {
     opacity: .5;
 }
+
+/* */
+
+
+
 }

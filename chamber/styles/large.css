@@ -1,6 +1,9 @@
 @media only screen and (min-width: 64rem) {
+    nav button {
+        display: none;
+    }
 
-  nav ul li a {
+    nav ul li a {
       font-size: 1.4rem;
   }
 
@@ -79,28 +82,7 @@
     height: auto;
 }
 /* ================================================================= */
-.discover-main {
-    width: 900px;
-    display: block;
-    position: relative;
-    margin: auto;
-    border: 1px solid rgba(0,0,0,0.3);
-    margin: 10px auto
-}
 
-.discover-main img {
-    width: 100%;
-    padding: 10px;
-    position: relative;
-}
 
-.discover-main p {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.discover-main img:hover {
-    opacity: .5;
-}
 
 }

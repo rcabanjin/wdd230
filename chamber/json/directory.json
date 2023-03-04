@@ -1,11 +1,11 @@
 {
-    "prophets": [
+    "business": [
       {
-        "business_name": "Joseph",
-        "location": "Smith",
-        "contact_number": "23 December 1805",
-        "website": "http://www.sample.com",
-        "imageurl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_1110,q_50,w_1920/v1/clients/vancouverbc/Spring_34f29e6f-aa43-467f-943d-a394f5928f3d.jpg"
+        "business_name": "Grouse Mountain",
+        "location": "North Vancouver",
+        "contact_number": "604.984.0661",
+        "website": "https://www.grousemountain.com/",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
       }
     ]
   }

@@ -1,125 +1,69 @@
-const url = 'json/directory.json';
-let isTableView = false;
+// define source and view-switch boolean
+const source = 'json/directory.json';
+let listDisplay = false;
 
+// pull json data
 async function getBusinessData() {
-  const response = await fetch(url);
-  const data = await response.json();
-  console.table(data.business);
-  displayBusiness(data.business);
+    const response = await fetch(source);
+    const data = await response.json();
+    displayGrid(data.businesses);
 }
 
+// run function
 getBusinessData();
 
-const displayBusiness = (business) => {
-  const cards = document.querySelector('.businesses');
-  const table = document.createElement('table');
-  const thead = document.createElement('thead');
-  const tbody = document.createElement('tbody');
-  const trHead = document.createElement('tr');
-  const th1 = document.createElement('th');
-  const th2 = document.createElement('th');
-  const th3 = document.createElement('th');
+// define grid display
+const displayGrid = (businesses) => {
+    const cards = document.querySelector('div.businesses'); // select the output container element
 
-  th1.textContent = 'Business Name';
-  th2.textContent = 'Location';
-  th3.textContent = 'Contact Number';
+    businesses.forEach((business) => {
+        // Create elements to add to the div.cards element
+        let card = document.createElement("section");
+        let logo = document.createElement("img");
+        let name = document.createElement("h2");
+        let address = document.createElement("p");
+        let phone = document.createElement("p");
+        let website = document.createElement("p");
+        let membership = document.createElement("p");
+    
+        // Build the image logo by setting all the relevant attribute
+        logo.setAttribute("src", business.image);
+        logo.setAttribute("alt", `${name} logo`);
+        logo.setAttribute("loading", "lazy");
+        logo.setAttribute("width", "180");
+        logo.setAttribute("height", "180");
+        logo.classList.add("not-list");
 
-  trHead.appendChild(th1);
-  trHead.appendChild(th2);
-  trHead.appendChild(th3);
-  thead.appendChild(trHead);
-  table.appendChild(thead);
-  table.appendChild(tbody);
+        // Build the other content out to show the business information
+        name.textContent = `${business.name}`;
+        address.textContent = `${business.address}`;
+        phone.textContent = `${business.phone}`;
+        website.textContent = `${business.website}`;
+        website.classList.add("not-list");
+        membership.textContent = `${business.membership} Membership`;
+        membership.classList.add("not-list");
+    
+        // Append the section(card) with the created elements
+        card.appendChild(logo);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        card.appendChild(membership);
+    
+        cards.appendChild(card);
+    }) // end of forEach loop
+} // end of function expression
 
-  business.forEach((business) => {
-    let card = document.createElement('section');
-    let h2 = document.createElement('h2');
-    let h3 = document.createElement('h3');
-    let portrait = document.createElement('img');
+// add event listeners
+const gridButton = document.querySelector("#grid-button");
+const listButton = document.querySelector("#list-button");
+const display = document.querySelector(".businesses");
 
-    h2.textContent = `${business.business_name}`;
-    const locationH3 = document.createElement("h3");
-    locationH3.textContent = `${business.location}`;
-    locationH3.classList.add('full-address');
-    const contactH3 = document.createElement("h3");
-    contactH3.textContent = `${business.contact_number}`;
-    const websiteLink = document.createElement("a");
-    websiteLink.href = business.website;
-    websiteLink.target = "_blank";
-    websiteLink.textContent = "Website Link";
+gridButton.addEventListener("click", () => {
+	display.classList.remove("list-view");
+});
 
-    card.style.textAlign = "center";
-
-    portrait.setAttribute('src', business.image);
-    portrait.setAttribute('alt', `Business Banner of ${business.business_name}`);
-    portrait.setAttribute('loading', 'lazy');
-    portrait.setAttribute('height', '200');
-
-    card.appendChild(h2);
-    card.appendChild(portrait);
-    card.appendChild(locationH3);
-    card.appendChild(contactH3);
-    card.appendChild(websiteLink);
-    tbody.appendChild(createTableRow(business));
-
-    cards.appendChild(card);
-  });
-
-  function createTableRow(business) {
-    const tr = document.createElement('tr');
-    const td1 = document.createElement('td');
-    const td2 = document.createElement('td');
-    const td3 = document.createElement('td');
-
-    td1.textContent = business.business_name;
-    td2.textContent = business.location;
-    td3.textContent = business.contact_number;
-
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-
-    return tr;
-  }
-
-  const toggleButton = document.createElement('button');
-  toggleButton.classList.add('toggle-view-btn');
-  toggleButton.textContent = 'Table View';
-
-  const gridButton = document.querySelector('#grid');
-  const listButton = document.querySelector('#list');
-  const display = document.querySelector('.businesses');
-
-  gridButton.addEventListener('click', () => {
-    display.classList.remove('list');
-    display.classList.add('grid');
-  });
-
-  listButton.addEventListener('click', () => {
-    display.classList.remove('grid');
-    display.classList.add('list');
-  });
-
-  toggleButton.addEventListener('click', () => {
-    isTableView = !isTableView;
-    if (isTableView) {
-      display.style.display = 'none';
-      table.style.display = 'table';
-      toggleButton.textContent = 'Card View';
-    } else {
-      display.style.display = 'flex';
-      table.style.display = 'none';
-      toggleButton.textContent = 'Table View';
-    }
-  });
-}
-
-const locationH3 = document.createElement("h3");
-locationH3.textContent = `${business.location}`;
-locationH3.classList.add('location');
-
-const contactH3 = document.createElement("h3");
-contactH3.textContent = `${business.contact_number}`;
-contactH3.classList.add('phone-number');
-
-//comment//
+listButton.addEventListener("click", () => {
+	display.classList.add("list-view");
+});

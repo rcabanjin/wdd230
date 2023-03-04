@@ -1,10 +1,74 @@
 {
-    "business": [
+    "businesses": [
       {
-        "business_name": "Grouse Mountain",
-        "location": "North Vancouver",
-        "contact_number": "604.984.0661",
+        "name": "Grouse Mountain",
+        "address": "North Vancouver",
+        "phone": "604.984.0661",
         "website": "https://www.grousemountain.com/",
+        "membership":"You don't have to go far to find majestic wildlife, exciting activities, great dining and breathtaking views.",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "Vancouver Aquarium",
+        "address": "845 Avison Way Vancouver",
+        "phone": "778-655-9554",
+        "website": "https://www.vanaqua.org",
+        "membership":"The Vancouver Aquarium is home to over 50,000 fascinating creatures from the Arctic to the Amazon.",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "Science World",
+        "address": "1455 Quebec Street Vancouver",
+        "phone": "604.443.7440",
+        "website": "https://www.scienceworld.ca/",
+        "membership":"Ignite your mind and discover the wonders of science with popular, hands on interactive displays.",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "Top of Vancouver Revolving Restaurant",
+        "address": "555 W Hastings St Vancouver",
+        "phone": "604.669.2220",
+        "website": "https://www.topofvancouver.com/",
+        "membership":"Fine continental dining at 553 feet (167m) for an unobstructed view of Vancouver, the coastal mountains, and the ocean",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "Jules Bistro",
+        "address": "216 Abbott Street Vancouver",
+        "phone": "604.669.0033",
+        "website": "https://www.julesbistro.ca/",
+        "membership":"An authentic Bar à Vin experience in the heart of Gastown in Vancouver BC serving delicious French food.",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "Granville Island Hotel",
+        "address": "1253 Johnston St. Vancouver",
+        "phone": "604.683.7373",
+        "website": "https://granvilleislandhotel.com/",
+        "membership":"The Granville Island Hotel is a beautiful boutique hotel located on the waterfront of Vancouver's artisian district: Granville Island.",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "'O Canada' House Bed and Breakfast",
+        "address": "900 April Point Road Quathiaski Cove",
+        "phone": "604.688.0555",
+        "website": "https://www.ocanadahouse.com/",
+        "membership":"Enjoy modern luxuries in a Victorian setting at one of the West End's most historic buildings.",
+        "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
+      },
+
+      {
+        "name": "April Point Resort & Spa",
+        "address": "1944 W. 4th Ave., Vancouver",
+        "phone": "888.999.2799",
+        "website": "https://www.aprilpoint.com",
+        "membership":"Escape to a Relaxing Oasis Surrounded by Nature. Surrounded by nature and framed by towering trees.",
         "image": "https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzEvMDAvMzYvMzkvZWM4ZWJmNTctYmRiMy00ZGRjLWIzMmItNDUxYWM2ODE4ZGRmL2NhbGwtY2VudHJlLmpwZyJdLFsicCIsInRodW1iIiwiOTYweDQ3MCMiXV0?sha=f7b33df77dd55f2f"
       }
     ]

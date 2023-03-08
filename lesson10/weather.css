@@ -1,0 +1,19 @@
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;  
+}
+
+
+
+  .weather-table {
+    background-color:rgb(179, 179, 242);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 50px 50px;
+    padding: 20px; 
+  }

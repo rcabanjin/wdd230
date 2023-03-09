@@ -3,12 +3,8 @@ const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
-const weathersite = 'https://api.openweathermap.org/data/2.5/weather';
-const city = ['Fairbanks','Vancouver'];
-const apiKey = 'c01b781653a97be5794d02bfa35c02a3';
 
-
-const url = `${weathersite}?q=${city}&units=metric&appid=${apiKey}`;
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=64.84&lon=-147.72&appid=c01b781653a97be5794d02bfa35c02a3&units=metric';
 
 async function apiFetch () {
     try {

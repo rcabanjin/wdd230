@@ -6,7 +6,7 @@ document.getElementById("currentYear").textContent = copyrightYear;
 const lastModified = document.lastModified;
 document.getElementById("lastupdated").textContent = lastModified;
 let currentDay = date.getDay();
-if (currentDate !== 1 || currentDate !== 2) {
+if (currentDay !== 1 && currentDay !== 2) {
     document.querySelector(".ad").style.display = "none";}
 
 

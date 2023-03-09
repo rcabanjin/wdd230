@@ -14,18 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
-    <script src="scripts/windchill.js"></script>
-    <script>
-        function windChill(tempF, speed) {
-          if (tempF <= 50 && speed >= 3) {
-            var windChillFactor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempF * Math.pow(speed, 0.16);
-            return windChillFactor;
-          }
-          else {
-            return "N/A";
-          }
-        }
-      </script>
+
 </head>
 <body>
     <div class="banner-head">British Columbia Industrial Marketing</div>
@@ -94,21 +83,21 @@
                     <a href="#">Read more</a>
                 </div>
             </div>
-            <div class="weather">
+            <div class= "weather">
                 <h2>Vancouver Weather</h2>
                 <div class="weather-info">
-                    <img src="images/cloud.png" alt="cloudy-image">
-                    <p id="temp">09°C</p>
-                    <p id="weather-condition">Condition: Chance of showers</p>
-                    <div class="more-weather-info">
-                        <p>Wind Speed: <span id="wind-speed">13 km/h</span></p>
-                        <p>The wind chill is <div id="output"></div>
-                    </div>  
-                    <script>
-                    document.getElementById("output").innerHTML = windChill(40, 5);
-                    </script>
-                </div>
+                        <p>The current temperature is: <span id="current-temp"></span> &deg;C.</p>
+                        <p>Current Weather Condition:</p>
+                        <figure>
+                            <img src="" alt= "" id="weather-icon"/>
+                        <figcaption></figcaption>
+                    </figure>
+                        <p>Wind Speed: <span id="wind-speed"></span> </p>
+                        <p>Wind Chill: <span id="wind-chill"></span> </p>
+                        
+                </div>  
             </div>
+    
             <div class="join-us">
                 <h2>Expand your network</h2>
                 <img src="images/join.png" alt="Join Icon">
@@ -145,5 +134,6 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"> </script>
+    <script src="scripts/weather.js"></script> 
 </body>
 </html>

@@ -273,15 +273,10 @@ nav ul li.active a {
 }
 
 .weather {
-    grid-column: 1/2;
-    grid-row: 2/3;
+
     text-align: center;
 }
 
-.weather-info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 .weather-info img {
     display: block;

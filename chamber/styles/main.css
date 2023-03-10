@@ -282,6 +282,8 @@ nav ul li.active a {
     display: block;
     margin: auto;
     height: 100px;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 #temp {
@@ -585,3 +587,10 @@ textarea {
     padding: 20px;
     margin-right: 20px;
   }
+
+#current-weather {
+    font-size: 15px;
+    font-style: normal;
+  }
+
+  

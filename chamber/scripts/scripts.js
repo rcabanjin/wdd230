@@ -17,10 +17,9 @@ if (currentDay !== 1 && currentDay !== 2) {
 }
 
 function toggleMenu() {
-    document.getElementById("primary-nav").classList.toggle("open");
-    document.getElementById("hamburger-button").classList.toggle("open");
-    }
-      
-    const hamburgerButton = document.getElementById("hamburger-button");
-    hamburgerButton.addEventListener("click", toggleMenu);
-    
+    document.getElementById('primary-nav').classList.toggle('open');
+    document.getElementById('hamburger-button').classList.toggle('open');
+}
+
+const x = document.getElementById('hamburger-button')
+x.onclick = toggleMenu;

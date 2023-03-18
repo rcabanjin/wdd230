@@ -58,6 +58,29 @@ header {
     height: 70px;
 }
 
+.hamburger-button {
+    text-align: right;
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+
+
+#hamburger-button span:nth-child(1) {
+    display: block;
+}
+
+#hamburger-button span:nth-child(2) {
+    display: none;
+}
+
+#hamburger-button.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburger-button.open span:nth-child(2) {
+    display: block;
+}
+
 button {
     margin: 0;
     padding: 0 8px;
@@ -101,13 +124,8 @@ nav ul li.active a {
     color: white;
     font-weight: bold;
 }
-/*
-#hamburger-button span:nth-child(1) {display: block;}
-#hamburger-button span:nth-child(2) {display: none;}
 
-#hamburger-button.open span:nth-child(1) {display: none;}
-#hamburger-button.open span:nth-child(2) {display: block;}
-*/
+
 .social-icons {
     cursor: pointer;
     grid-column: 2/3;
@@ -152,6 +170,8 @@ nav ul li.active a {
 .event .click-button {
     margin-top: 16px;
 }
+
+
 
 .click-button, .join-button{
     cursor: pointer;
@@ -410,7 +430,10 @@ footer {
 
 .discover-main {
     display: grid;
-    padding: 10px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 .discover-main img {
@@ -623,9 +646,9 @@ textarea {
 
 .image-contactus {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: -40px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .image-contactus img {

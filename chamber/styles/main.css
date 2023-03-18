@@ -59,9 +59,9 @@ header {
 }
 
 .hamburger-button {
-    text-align: right;
-    grid-column: 2/2;
+    text-align: center;
     grid-row: 2/3;
+    margin-right: 30px;
 }
 
 
@@ -177,7 +177,7 @@ nav ul li.active a {
     cursor: pointer;
     color: white;
     padding: 0.6rem;
-    background-color: var(--accent-2-color);
+    background-color: white;
     border-radius: 5px;
     margin: 20px 20px;
 }
@@ -227,14 +227,19 @@ nav ul li.active a {
     cursor: pointer;
     color: white;
     padding: 0.6rem;
-    background-color: #5489E7;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with alpha value */
+    opacity: 3;
     border-radius: 5px;
     width: 200px;
-    font-size: 16px;
+    font-size: 20px;
     top: 240px;
     left: 140px;
-    
+    text-decoration: none;
 }
+
+a {
+    text-decoration: none;
+  }
 
 
 .spotlight {
@@ -349,7 +354,7 @@ nav ul li.active a {
 }
 
 .news h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 footer {

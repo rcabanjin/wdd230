@@ -1,0 +1,292 @@
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.logo img {
+    max-height: 150px;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+nav li {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+nav a {
+    text-decoration: none;
+    color:  #074e19;
+}
+  
+.contact-info {
+    display: none;
+
+}
+  
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+/* Banner styles */
+.banner {
+    height: 500px;
+    width: auto;
+    background-image: url("image/fruits-1-1.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color:#074e19;;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .banner-heading {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .banner-text {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .banner-btn {
+    display: inline-block;
+    background-color: #074e19;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner-btn:hover {
+    background-color: #555;
+  }
+  
+  /* About Us styles */
+.about-us {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .about-us-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-us-text p{
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+
+  /* Card styles */
+  .cards {
+    display: grid;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  
+  .card .weather-card{
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+
+/* Fresh-Shake-Banner styles */
+.Fresh-Shake-Banner {
+    height: 500px;
+    width: auto;
+    background-image: url("image/fruits-1-1.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  }
+  
+.Fresh-Shake-Banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+  .Fresh-Shake-Banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left  ;
+    z-index: 1;
+    color:#074e19;  
+}
+  
+  .Fresh-Shake-Banner h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .Fresh-Shake-Banner p {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40%;
+  }
+
+  /* Footer styles */
+
+  footer {
+    background-color: #074e19;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media a {
+    font-size: 24px;
+  }
+  
+  .social-media a:hover {
+    color: #007bff;
+
+  }
+  
+  address {
+    font-style: normal;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .all-rights-reserved {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  footer img {
+    max-height: 150px;
+  }
+  
+
+  

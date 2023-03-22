@@ -1,0 +1,24 @@
+@media only screen and (min-width: 45rem) {
+.contact-info {
+display: block;
+margin-right: 20px;
+color:  #074e19;
+}
+
+.hamburger-menu {
+display: none;
+}
+
+.banner-heading {
+    font-size: 70px;
+}
+
+.banner-text {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .banner-btn {
+margin-top: 40px;
+}    
+
+}

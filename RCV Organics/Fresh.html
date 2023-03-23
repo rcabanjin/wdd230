@@ -35,29 +35,42 @@
     <section class="Fresh-Shake-Banner">
       <img src="image/shake1.png" alt="Fresh-Shake-Banner">
         <div class="Fresh-Shake-Banner-content">
-          <h2>Taste of the Tropics</h2>
-          <p>Say aloha to a variety of sun-soaked fruits bursting with lush, in-season tropical flavors. </p>
+          <h2>HEALTHY AND GREAT TASTING</h2>
+          <p>Offer great tasting, healthy, fresh smoothies and juices, steps away from your home. </p>
         </div>
       </section>
 
-<section class="about-us">
-  <div class="about-us-container">
-    <h2 class="about-us-heading">Explore Laguna Beach</h2>
-        <div  class="about-us-text">
-        <p>One beautiful coastal area in Southern California is Laguna Beach, 
-            located in Orange County. This area boasts stunning views of the 
-            Pacific Ocean and is known for its pristine beaches, crystal-clear waters, and rocky cliffs. 
-            Visitors can explore the tide pools, go surfing, or take a leisurely walk along the beach. </p>
-        <p> </p>
-        <p> The area is also home to a thriving arts scene, with numerous galleries and 
-            studios showcasing the work of local artists. In addition, Laguna Beach 
-            is home to several delicious restaurants and boutique shops, making it a great 
-            destination for a day trip or a weekend getaway. Whether you're looking for adventure or relaxation, 
-            Laguna Beach has something for everyone.</p>  
-        </div>  
+<section class="fresh-page-section">
+  <div class="fresh-page-container">
+    <h2>Fresh Pressed Juices</h2>
+        <p>Whether you’re on the go, looking for a post-gym protein packed beverage, or 
+            just a mid-day day refresher, our freshly blended smoothies are the perfect addition. 
+            Made with whole fruit, fresh veggies, and always blended right on order. </p>
   </div>
 </section>
-  
+    <section class="fresh-form">
+     <h2>Build Your Own Specialty Drink</h2>
+        <form id="drink-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="fruit1">Select Fruit:</label>
+            <select id="fruit1" name="fruit1" required></select>
+            <label for="fruit2">Select Fruit:</label>
+            <select id="fruit2" name="fruit2" required></select>
+            <label for="fruit3">Select Fruit:</label>
+            <select id="fruit3" name="fruit3" required></select>
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special-instructions"></textarea>
+            <button type="submit">Place Order</button>
+        </form>
+            <h3 class="h3-summary">Order Summary:</h3>
+            <div id="order-summary"></div>
+    </section>      
+
 
 
     <footer>
@@ -90,7 +103,7 @@
         </div>
       </footer>
       
-    <script src="script/weather-fruit.js"> </script>
+    <script src="script/fruit-data.js"> </script>
     <script src="script/script.js "> </script>
   </body>
 </html>

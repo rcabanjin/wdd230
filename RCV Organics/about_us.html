@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style/medium.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ca8be61f2b.js" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYOVZkI9WOQQmlqSYnxXLlAAmStl6s0Mo&callback=initMap" async defer></script>
-   
+    <script src="script/googlemap.js"> </script>
+    
+    
   </head>
   <body>
 
@@ -20,7 +21,7 @@
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About</a></li>
-            <li><a href="Fresh.html">Contact</a></li>
+            <li><a href="Fresh.html">Fresh</a></li>
           </ul>
         </nav>
         <div class="contact-info">
@@ -55,9 +56,11 @@
     <h2>Laguna Bay CA</h2>
     <p>Laguna Bay CA is a beautiful coastal city located in Southern California. With its pristine beaches, vibrant culture, and stunning views, it's no wonder that so many people choose to call Laguna Bay home.</p>
     <p>Whether you're looking to explore the great outdoors or indulge in some world-class shopping and dining, Laguna Bay has something for everyone. From hiking trails and beach volleyball to gourmet restaurants and luxury boutiques, this city truly has it all.</p>
-    
-    <div id="map"></div>
   </section>
+    <section class="map-container">  
+        <div id="map"></div>
+    </section>
+
   <section>
     <h2>Contact Us</h2>
     <form>
@@ -99,13 +102,18 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p class="all-rights-reserved">© 2023 All rights reserved.</p>
+                <div class="copyright">
+                    <p>&copy; <span id="currentYear"></span> | Ron Ron Cabanjin | WDD 230 Project | Last updated: <span id="lastupdated"></span></p>
+                </div>
             </div>
           </div>
         </div>
       </footer>
-      <script src="script/googlemap.js"> </script>
-    
+      
+      <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYOVZkI9WOQQmlqSYnxXLlAAmStl6s0Mo&callback=initMap&v=weekly"
+      defer
+    ></script>
     
   </body>
 </html>

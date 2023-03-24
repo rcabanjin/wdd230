@@ -31,7 +31,16 @@ margin-top: 40px;
   
   .Fresh-Shake-Banner p {
     font-size: 25px;
+    margin-left: 50px;
+
   }
+
+  .Fresh-Shake-Banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left  ;
+}
 
   .fresh-page-section {
     padding: 40px 0;
@@ -74,5 +83,11 @@ margin-top: 40px;
     font-size: 20px;
 }
 
+/* MAP */
+
+.map-container {
+    width: 700px;
+
+}
 
 }

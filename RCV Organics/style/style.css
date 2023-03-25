@@ -9,6 +9,9 @@
 * {
     font-family: 'Nunito', sans-serif;
 }
+
+  
+
 header {
     display: flex;
     justify-content: space-between;
@@ -127,10 +130,12 @@ nav a {
 .about-us {
     padding: 40px 0;
     background-color: #f9f9f9;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   
   .about-us-heading {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
@@ -138,11 +143,10 @@ nav a {
 
   .about-us-text p{
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+
   }
   
 
@@ -182,7 +186,6 @@ nav a {
 /* Fresh-Shake-Banner styles */
 .Fresh-Shake-Banner {
     height: 500px;
-    width: auto;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -205,7 +208,6 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left  ;
     z-index: 1;
     color:#074e19;  
 }
@@ -232,15 +234,13 @@ nav a {
   .fresh-page-section {
     padding: 40px 0;
     background-color: #f9f9f9;
+
   
   }
   
   .fresh-page-section h2{
     font-size: 20px;
     font-weight: bold;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-left: 30px;
    
   }
 
@@ -250,13 +250,12 @@ nav a {
     line-height: 1.5;
     text-align: left;
     max-width: 800px;
-    margin-left: 50px;
   }
 
 
   /* Fresh Fruit Form */
 
-form, h2{
+form{
 	max-width: 700px;
     margin-left: 30px;
     padding: 20px;

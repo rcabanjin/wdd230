@@ -21,6 +21,13 @@ display: none;
 margin-top: 40px;
 }    
 
+.about-us {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 
 /* Fresh-Shake-Banner styles */
   
@@ -39,7 +46,6 @@ margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left  ;
 }
 
   .fresh-page-section {

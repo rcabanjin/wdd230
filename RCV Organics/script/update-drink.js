@@ -1,34 +1,18 @@
-// Update drink count
-document.addEventListener("DOMContentLoaded", function() {
-function updateDrinkCount() {
-  const drinkCount = localStorage.getItem('drinkCount');
-  const drinkCountElement = document.getElementById('drink-count');
-  if (drinkCount) {
-    drinkCountElement.innerText = drinkCount;
-  } else {
-    drinkCountElement.innerText = '1';
-  }
-}
+// Get the current user's agent string
+const userKey = navigator.userAgent;
 
-// Increment drink count
-function incrementDrinkCount() {
-  const drinkCount = localStorage.getItem('drinkCount');
-  if (drinkCount) {
-    localStorage.setItem('drinkCount', parseInt(drinkCount) + 1);
-  } else {
-    localStorage.setItem('drinkCount', 1);
-  }
-  updateDrinkCount();
-}
+// Get the number of Fresh Form submissions from local storage, or set to 0 if it's not there
+let formCount = parseInt(localStorage.getItem(userKey)) || 0;
 
-// Call incrementDrinkCount when form is submitted
-const form = document.getElementById('drink-form');
-form.addEventListener('submit', event => {
+// Update the form count element in the HTML
+const formCountEl = document.querySelector('#form-count');
+formCountEl.textContent = formCount;
+
+// Listen for form submissions and update the form count in local storage
+const freshForm = document.querySelector('#drink-form');
+freshForm.addEventListener('submit', event => {
   event.preventDefault();
-  incrementDrinkCount();
-});
-
-// Update drink count on page load
-updateDrinkCount();
-
+  formCount++;
+  localStorage.setItem(userKey, formCount);
+  formCountEl.textContent = formCount;
 });

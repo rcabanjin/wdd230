@@ -9,6 +9,11 @@ color:  #074e19;
 display: none;
 }
 
+nav li {
+  margin: 0 10px;
+  font-size: 25px;
+}
+
 .banner-heading {
     font-size: 70px;
 }
@@ -21,6 +26,19 @@ display: none;
 margin-top: 40px;
 }    
 
+ /* Weather forecast */ 
+ .current-weather, .day1, .day2{
+  margin-bottom: 50px;
+}
+.weather h1 {
+  font-size: 25px;
+  }
+
+.weather p {
+font-size: 20px;
+}
+
+
 .about-us {
   padding: 40px 0;
   background-color: #f9f9f9;
@@ -29,16 +47,23 @@ margin-top: 40px;
 }
 
 
+.about-us-text{
+  font-size: 20px;
+}
+
+
+
 /* Fresh-Shake-Banner styles */
   
 
   .Fresh-Shake-Banner h2 {
     font-size: 50px;
+    margin: 0px;
   }
   
   .Fresh-Shake-Banner p {
     font-size: 25px;
-    margin-left: 50px;
+    margin: 0px;
 
   }
 
@@ -65,7 +90,7 @@ margin-top: 40px;
 
   .fresh-page-section p{
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     text-align: left;
     max-width: 800px;
@@ -83,10 +108,10 @@ margin-top: 40px;
 }  
 #order-summary {
 	margin: 20px 0px 50px 0px;
-	background-color: #f7f7f7;
+	background-color:#F4EEA9;
 	max-width: 700px;
 	margin-left: 60px;
-    font-size: 20px;
+  font-size: 25px;
 }
 
 /* MAP */

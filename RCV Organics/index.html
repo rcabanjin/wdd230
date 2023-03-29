@@ -61,16 +61,52 @@
   
     <section class="cards">
         <div class="card">
-            <h2>Carlsbad Weather</h2>
-              <p>Temperature: <span id="currentTemp"></span></p>
-              <p>Condition: <span id="conditionDesc"></span></p>
-              <p>Humidity: <span id="humidity"></span></p>
-              <h2>3-Day Forecast</h2>
-              <p>Temperatures: <span id="forecastTemps"></span></p>
+  
+
+          <div class="weather">
+            <div class="current-weather">
+              <h1>Carlsbad Current Weather Forecast</h1>
+              <div class="weather-info">
+                <img id="current-icon" alt="Current Weather Icon">
+                <p>Weather: <span id="current-weather"></span></p>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p>Humidity: <span id="current-humidity"></span></p>
+              </div>
+            </div>
+            <h1>Carlsbad 3 Day Weather Forecast</h1>
+            <div class="day1">
+              <h2>Day 1</h2>
+              <div class="weather-info">
+                <img id="day1-icon" alt="Day 1 Weather Icon">
+                <p>Weather: <span id="day1-weather"></span></p>
+                <p>Temperature: <span id="day1-temp"></span></p>
+              </div>
+            </div>
+            <div class="day2">
+              <h2>Day 2</h2>
+              <div class="weather-info">
+                <img id="day2-icon" alt="Day 2 Weather Icon">
+                <p>Weather: <span id="day2-weather"></span></p>
+                <p>Temperature: <span id="day2-temp"></span></p>
+              </div>
+            </div>
+            <div class="day3">
+              <h2>Day 3</h2>
+              <div class="weather-info">
+                <img id="day3-icon" alt="Day 3 Weather Icon">
+                <p>Weather: <span id="day3-weather"></span></p>
+                <p>Temperature: <span id="day3-temp"></span></p>
+              </div>
+            </div>
           </div>
+        </div>
           <div class="card">
             <h2>Card 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus odio vel eros ultrices, in ornare est malesuada. Nunc semper, lectus quis interdum aliquam, augue felis accumsan ante, non consectetur sem justo vel lorem.</p>
+            <div class="info-card">
+              <h2>Your Fresh Form Submissions</h2>
+              <p>You have submitted a total of <br> <br><span id="form-count"></span> <br><br>specialty drinks</p>
+              <img src="image/drinks.png" alt="Logo">
+            </div>
           </div>
     
         </section>  
@@ -109,7 +145,8 @@
         </div>
       </footer>
       
-    <script src="script/weather-fruit.js"> </script>
+    <script src="script/forecast.js"> </script>
     <script src="script/script.js"> </script>
+    <script src="script/update-drink.js"></script>
   </body>
 </html>

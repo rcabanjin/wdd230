@@ -19,19 +19,30 @@ fetch(apiUrl)
   .catch(error => console.error(error));
 
 // Get 3-day forecast data
-const forecastApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&cnt=3&appid=${apiKey}`;
+const currentApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+const forecastApiUrl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&units=imperial&cnt=3&appid=${apiKey}`;
 
+fetch(currentApiUrl)
+  .then(response => response.json())
+  .then(data => {
+    // process current weather data
+    const currentTemp = data.main.temp;
+
+
+    // display current weather data
+    const currentTempElement = document.getElementById('currentTemp');
+    currentTempElement.textContent = currentTemp;
+  })
+  .catch(error => console.error('Error fetching current weather:', error));
 
 fetch(forecastApiUrl)
   .then(response => response.json())
-  .then(weatherData => {
+  .then(data => {
+    // process forecast weather data
+    const forecastTemps = data.list.map(day => day.temp.day);
+
+    // display forecast weather data
     const forecastTempsElement = document.getElementById('forecastTemps');
-
-    const temps = [];
-    for (let i = 0; i < 3; i++) {
-      temps.push(`${weatherData.daily[i].temp.day} °F`);
-    }
-
-    forecastTempsElement.textContent = temps.join(', ');
+    forecastTempsElement.textContent = forecastTemps.join(', ');
   })
-  .catch(error => console.error(error));
+  .catch(error => console.error('Error fetching forecast:', error));

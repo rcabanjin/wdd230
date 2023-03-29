@@ -42,6 +42,12 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
         totalSugar += fruitData.nutritions.sugar;
         totalCalories += fruitData.nutritions.calories;
       });
+      // Round the nutritional information to two decimal points
+      totalCarbs = totalCarbs.toFixed(2);
+      totalProtein = totalProtein.toFixed(2);
+      totalFat = totalFat.toFixed(2);
+      totalSugar = totalSugar.toFixed(2);
+      totalCalories = totalCalories.toFixed(2);
 
       // Get the current date and time
       const date = new Date();
@@ -53,12 +59,12 @@ fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
                       Email: ${email}<br>
                       Phone: ${phone}<br>
                       Fruits: ${selectedFruits.join(', ')}<br>
-                      Special Instructions: ${instructions}<br>
+                      Special Instructions: ${instructions}<br><br>
                       Total Nutrition:<br>
-                      Carbs: ${totalCarbs}g<br>
-                      Protein: ${totalProtein}g<br>
-                      Fat: ${totalFat}g<br>
-                      Sugar: ${totalSugar}g<br>
+                      Carbs: ${totalCarbs} g<br>
+                      Protein: ${totalProtein} g<br>
+                      Fat: ${totalFat} g<br>
+                      Sugar: ${totalSugar} g<br>
                       Calories: ${totalCalories}`;
       
       // Display the output in the output area

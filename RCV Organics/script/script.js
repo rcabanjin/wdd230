@@ -29,3 +29,9 @@ const navLinks = document.querySelector('.nav-links');
 hamburgerMenu.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
+
+
+const bannerImg = document.querySelector('.banner img');
+bannerImg.addEventListener('load', function() {
+  bannerImg.classList.add('loaded');
+});

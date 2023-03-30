@@ -12,28 +12,26 @@
     
   </head>
   <body>
-
     <header>
-        <div class="logo">
-          <img src="image/rvcorganics1.png" alt="Your Logo">
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About</a></li>
-            <li><a href="Fresh.html">Fresh</a></li>
-          </ul>
-        </nav>
-        <div class="contact-info">
-          <p>Phone: 123-456-7890</p>
-          <p>Email: info@rvcorganics.com</p>
-        </div>
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </header>
+      <div class="logo">
+        <img src="image/rvcorganics1.png" alt="Your Logo">
+      </div>
+
+      <nav>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="Fresh.html">Fresh</a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@rvcorganics.com</p>
+      </div>
+      <nav>
+        <button id="hamburger-button"><span>&#9776;</span><span>&#9776;</span></button>
+    </nav>
+    </header>
 
     <div class="Fresh-Shake-Banner">
       <img src="image/aboutus.png" alt="about-us-Banner">
@@ -48,19 +46,17 @@
   </div>
 </section> 
 
-<div class="banner">
-  <img src="image/placeholderIMG.png" data-src="image/crescent-bay-beach-laguna.jpeg" alt="crescent-bay-beach-laguna" loading="lazy">
-  
-</div>
 
-<div class="banner">
-  <img src="image/aboutus.png"  alt="crescent-bay-beach-laguna" loading="lazy">
-</div>
 <section class="fresh-page-section">
     <h2>Laguna Bay CA</h2>
     <p>Laguna Bay CA is a beautiful coastal city located in Southern California. With its pristine beaches, vibrant culture, and stunning views, it's no wonder that so many people choose to call Laguna Bay home.</p>
     <p>Whether you're looking to explore the great outdoors or indulge in some world-class shopping and dining, Laguna Bay has something for everyone. From hiking trails and beach volleyball to gourmet restaurants and luxury boutiques, this city truly has it all.</p>
+    <figure>
+    <img src="https://via.placeholder.com/800x600" data-src="image/crescent-bay-beach-laguna.jpeg" alt="My Image" loading="lazy">
+    <figcaption>Crescent Bay Beach Laguna. Source: visitlagunabeach.com</figcaption>
+    </figure>
   </section>
+  <h2>Visit us</h2>
     <div class="map-container">  
         <div id="map"></div>
     </div>
@@ -119,6 +115,7 @@
       defer></script>
       
       <script src="script/script.js"> </script>
+      <script src="script/lazyload.js"> </script>
     
   </body>
 </html>

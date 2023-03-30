@@ -26,10 +26,10 @@ header {
 }
   
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
   
 nav li {
@@ -46,20 +46,65 @@ nav a {
     display: none;
 
 }
-  
 
-.hamburger-menu {
-    display: block;
-    cursor: pointer;
+/* Hamburger Button */
+.hamburger-button {
+  text-align: center;
+  margin-right: 30px;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
+
+#hamburger-button span:nth-child(1) {
+  display: block;
 }
 
+#hamburger-button span:nth-child(2) {
+  display: none;
+}
+
+#hamburger-button.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburger-button.open span:nth-child(2) {
+  display: block;
+}
+
+#hamburger-button {
+  margin: 0;
+  padding: 0 8px;
+  background: transparent;
+  border: 1px solid rgb(154, 152, 152);
+  border-radius: 2px;
+  font-size: 2rem;
+  color: black;
+}
+
+nav ul.open {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color:  #074e19;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+nav ul li.active a {
+  color: rgb(3, 0, 0);
+  font-weight: bold;
+}
+
+h2  {
+  margin-bottom: 15px;
+}
 /* Banner styles */
 .banner {
     height: 500px;
@@ -81,7 +126,6 @@ nav a {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
   
@@ -134,11 +178,69 @@ nav a {
   }
 
 
+  /* Fresh Form with image */
+
+  .fresh-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.column {
+  flex: none;
+}
+
+.fresh-form {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.image {
+  position: relative;
+  width: 520px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
   
   /* About Us styles */
 .about-us {
     padding: 40px 0;
+ 
     background-color: #f9f9f9;
+    margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -157,8 +259,14 @@ nav a {
     text-align: center;
   }
 
+  .fresh-page-section img {
+    margin-left: 50px;
+    width: 400px;
+    margin-top: 30px;
+  }
+
   .contact-us-form label {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .contact-us-form input {
@@ -169,6 +277,10 @@ nav a {
     margin-left: 30px;
   }
 
+  figcaption {
+    font-size: 10px;
+    margin-left: 50px;
+  }
 
   /* Card styles */
   .cards {
@@ -220,7 +332,8 @@ nav a {
 
 .info-card img{
 margin-top: 30px;
-height: 400px;
+width: 300px;
+height: auto;
 }
 
 /* Fresh Drink Counter */
@@ -306,7 +419,7 @@ height: 400px;
   /* Fresh Fruit Form */
 
 form{
-	max-width: 700px;
+	max-width: 400px;
     margin-left: 30px;
     padding: 20px;
     margin-right: 20px;
@@ -368,7 +481,7 @@ textarea {
 /* MAP*/
 
 .map-container {
-    width: 500px;
+    width: 400px;
     margin-left: 50px;
     margin-bottom: 50px;
 

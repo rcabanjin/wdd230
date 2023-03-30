@@ -23,15 +23,10 @@ if (date.getDay() !== 1 && date.getDay() !== 2) {
 
 
 
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
+function toggleMenu() {
+  document.getElementById('nav-links').classList.toggle('open');
+  document.getElementById('hamburger-button').classList.toggle('open');
+}
 
-hamburgerMenu.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-
-const bannerImg = document.querySelector('.banner img');
-bannerImg.addEventListener('load', function() {
-  bannerImg.classList.add('loaded');
-});
+const x = document.getElementById('hamburger-button')
+x.onclick = toggleMenu;

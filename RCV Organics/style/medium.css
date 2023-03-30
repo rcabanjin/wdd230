@@ -151,7 +151,10 @@ h2 {
 
 .map-container {
     width: 700px;
+}
 
+#map {
+  height: 700px;
 }
 
 }

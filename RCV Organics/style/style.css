@@ -179,6 +179,9 @@ h2  {
 
 
   /* Fresh Form with image */
+.form-count-display {
+  display:none;
+}
 
   .fresh-container {
     display: flex;
@@ -449,6 +452,15 @@ label {
 }
 
 button[type="submit"] {
+	display: block;
+    padding: 20px;
+	margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color:  #074e19;
+}
+
+button[type="submit2"] {
 	display: block;
     padding: 20px;
 	margin-bottom: 20px;
